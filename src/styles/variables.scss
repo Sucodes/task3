@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+
+
+/*************** Font family *************************/
+
+$fontFamily: 'Red Rose';
+$fontFamily2: 'Sora';
+
+
+/************* Colors ******************/
+
+$purple: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+$purpleColor: #A02279;
+$textColor: #434343;
+$white: #F7F7F7;
+$black: #000000;
+$backgroundColorBlack: #1D1D1E;
+$backgroundColor: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+
+
+/*************** Font Sizes *************************/
+
+$fontSizeSm: 20px;
+$fontSizeMd: 24px;
+$fontSizeLg: 56px;
+
+
+/*************** Breakpoints *************************/
+
+$md: 768px;
+$lg: 1024px;
+
+
+/****************** Mixins **********************/
+
+@mixin flexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn {
+    font-family: $fontFamily;
+    font-size: 16px;
+    line-height: 20px;
+    @include flexCenter(row);
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+}
+
