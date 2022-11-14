@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.nfts {
+    padding: 0px 50px;
+    @include flexCenter(column);
+    justify-content: space-between;
+    height: 900px;
+    width: 100%;
+
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 35px;
+        color: black;
+        text-align: center;
+        margin-bottom: 43px;
+    }
+
+    &_card {
+        width: inherit;
+        @include flexCenter(row);
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}
+
+
+/***************** media queries **********************/
+
+@media (min-width: $md) {
+    .nfts {
+        padding: 0px 100px;
+
+        h2 {
+            font-size: 48px;
+            line-height: 60px;
+        }
+    }
+}
