@@ -1,22 +1,55 @@
 @import '../../styles/variables.scss';
 
 .places {
-    padding: 0px 50px;
+    padding: 0px 20px;
     @include flexCenter(column);
     justify-content: space-between;
     width: 100%;
-    margin-top: 91px;
 
-    h2 {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 35px;
-        color: black;
-        text-align: center;
-        margin-bottom: 43px;
+    &_filter {
+        height: 7em;
+        margin-top: 50px;
+        width: inherit;
+        @include flexCenter(column);
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        ul {
+            height: 3em;
+            width: 100%;
+            @include flexCenter(column);
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            li {
+                color: #434343;
+                list-style: none;
+            }
+        }
+
+        &__btn {
+            border: 1px solid #B4B4B4;
+            border-radius: 8px;
+            height: 48px;
+            width: 161px;
+            @include flexCenter(row);
+            justify-content: space-around;
+
+            span {
+                width: 68px;
+                height: 20px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                text-align: center;
+                color: #333333;
+            }
+        }
     }
 
     &_card {
+        margin-bottom: 50px;
+        margin-top: 50px;
         width: inherit;
         @include flexCenter(row);
         flex-wrap: wrap;
@@ -29,17 +62,66 @@
 
 @media (min-width: $md) {
     .places {
-        padding: 0px 100px;
 
-        h2 {
-            font-size: 48px;
-            line-height: 60px;
+        &_filter {
+            margin-top: 75px;
+            height: 8em;
+            width: 100%;
+            @include flexCenter(column);
+            flex-wrap: wrap;
+    
+            ul {
+                height: 70px;
+                width: 650px;
+                @include flexCenter(row);
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+        }
+
+        &_card {
+            margin-bottom: 91px;
+            margin-top: 73px;
         }
     }
 }
 
 @media (min-width: $lg) {
     .places {
-        height: 900px;
+
+        &_filter {
+            @include flexCenter(row);
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 90px;
+    
+            ul {
+                height: 70px;
+                width: 680px;
+                @include flexCenter(row);
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media (min-width: $xl) {
+    .places {
+
+        &_filter {
+
+            ul {
+                height: 23px;
+                width: 800px;
+                @include flexCenter(row);
+                justify-content: space-around;
+            }
+    
+            &__btn {
+                height: 48px;
+                width: 161px;
+            }
+        }
     }
 }
