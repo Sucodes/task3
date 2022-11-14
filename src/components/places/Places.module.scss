@@ -4,7 +4,6 @@
     padding: 0px 50px;
     @include flexCenter(column);
     justify-content: space-between;
-    // height: 900px;
     width: 100%;
     margin-top: 91px;
 
@@ -36,5 +35,11 @@
             font-size: 48px;
             line-height: 60px;
         }
+    }
+}
+
+@media (min-width: $lg) {
+    .places {
+        height: 900px;
     }
 }

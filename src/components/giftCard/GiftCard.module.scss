@@ -1,0 +1,117 @@
+@import '../../styles/variables.scss';
+
+.giftcard {
+    padding: 0px 20px;
+    margin-top: 53px;
+    height: 650px;
+    background-color: $purpleColor;
+    color: $white;
+    @include flexCenter(column);
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &_left {
+        height: 280px;
+        @include flexCenter(column);
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h2 {
+            width: 346px;
+            height: 60px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        p {
+            width: inherit;
+            font-weight: 400;
+            font-size: 1.2em;
+            line-height: 30px;
+        }
+
+        input {
+            cursor: pointer;
+            font-family: $fontFamily;
+            color: $purpleColor;
+            background-color: $white;
+            height: 48px;
+            width: 156px;
+            border: 1px solid $purpleColor;
+            border-radius: 8px;
+        }
+    }
+
+    img {
+        width: 19em;
+        object-fit: contain;
+    }
+}
+
+
+/***************** media queries *************************/
+
+
+@media (min-width: $md) {
+    .giftcard {
+        padding: 0px 50px;
+        @include flexCenter(row);
+        justify-content: space-between;
+    
+        &_left {
+ 
+            h2 {
+                font-size: 48px;
+            }
+    
+            p {
+                width: 420px;
+                font-size: 18px;
+                line-height: 35px;
+            }
+        }
+
+        img {
+            width: 26em;
+        }
+    }
+}
+
+
+@media (min-width: $lg) {
+    .giftcard {
+        padding: 0px 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        
+        &_left {
+            height: 320px;
+            @include flexCenter(column);
+            justify-content: space-between;
+            align-items: flex-start;
+    
+            p {
+                height: 136px;
+            }
+        }
+
+        img {
+            width: 32em;
+            height: 574.85px;
+        }
+    }
+}
+
+
+@media (min-width: $xl) {
+    .giftcard {
+        padding: 0px 100px;
+        height: 774px;
+
+        img {
+            width: 44em;
+        }
+    }
+}
