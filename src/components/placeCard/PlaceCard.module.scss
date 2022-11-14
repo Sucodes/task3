@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+
+.place_card {
+    border: 1px solid #D7D7D7;
+    border-radius: 15px;
+    padding: 16px;
+    @include flexCenter(column);
+    justify-content: space-between;
+    width: 292px;
+    height: 372px;
+    cursor: pointer;
+
+    &__image {
+        width: 260px;
+        height: 265px;
+    }
+
+    &_detail {
+        width: 100%;
+        @include flexCenter(row);
+        justify-content: space-between;
+
+        &__1 {
+            width: 67px;
+            height: 14px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 13px;
+        }
+
+        &__2 {
+            width: 88px;
+            height: 14px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 13px;
+        }
+
+        &__3 {
+            width: 83px;
+            height: 14px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 13px;
+        }
+
+        &__4 {
+            width: 148px;
+            height: 14px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 13px;
+        }
+    }
+
+    &__icon {
+        width: 100%;
+        @include flexCenter(row);
+        justify-content: flex-start;
+
+        img {
+            width: 92px;
+            height: 12px;
+        }
+    }
+}
