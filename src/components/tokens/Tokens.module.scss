@@ -1,0 +1,62 @@
+@import '../../styles/variables.scss';
+
+.tokens {
+    margin: 70px 0px;
+    height: 70px;
+    @include flexCenter(row);
+    justify-content: space-around;
+    background-color: $purpleColor;
+    padding: 10px 0px;
+
+    &_1 {
+        width: 100px;
+        height: 25px;
+    }
+
+    &_2 {
+        width: 100px;
+        height: 25px;
+    }
+
+    &_3 {
+        width: 100px;
+        height: 25px;
+    }
+}
+
+
+/************** media queries ********************/
+
+
+@media (min-width: $md) {
+    .tokens {
+        margin-top: 100px;
+        margin-bottom: 58px;
+        height: 70px;
+        padding: 10px 50px;
+        @include flexCenter(row);
+        justify-content: space-between;
+
+        &_1 {
+            width: 222px;
+            height: 50px;
+        }
+    
+        &_2 {
+            width: 214.14px;
+            height: 37.56px;
+        }
+    
+        &_3 {
+            width: 198.32px;
+            height: 40.79px;
+        }
+    }
+}
+
+
+@media (min-width: $lg) {
+    .tokens {
+        padding: 10px 100px;
+    }
+}
