@@ -1,7 +1,6 @@
 @import '../../styles/variables.scss';
 
 .places {
-    padding: 0px 20px;
     @include flexCenter(column);
     justify-content: space-between;
     width: 100%;
@@ -50,13 +49,11 @@
     &_card {
         margin-bottom: 50px;
         margin-top: 50px;
-        width: inherit;
         @include flexCenter(row);
         flex-wrap: wrap;
         gap: 24px;
     }
 }
-
 
 /***************** media queries **********************/
 

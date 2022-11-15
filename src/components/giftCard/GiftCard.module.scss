@@ -49,13 +49,10 @@
     }
 }
 
-
 /***************** media queries *************************/
-
 
 @media (min-width: $md) {
     .giftcard {
-        padding: 0px 50px;
         @include flexCenter(row);
         justify-content: space-between;
     
@@ -73,41 +70,29 @@
         }
 
         img {
-            width: 26em;
+            width: 18em;
         }
     }
 }
 
-
 @media (min-width: $lg) {
     .giftcard {
-        padding: 0px 80px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        
+       
         &_left {
-            height: 320px;
-            @include flexCenter(column);
-            justify-content: space-between;
-            align-items: flex-start;
-    
             p {
                 height: 136px;
             }
         }
 
         img {
-            width: 32em;
+            width: 30em;
             height: 574.85px;
         }
     }
 }
 
-
-@media (min-width: $xl) {
+@media (min-width: $xl) {  
     .giftcard {
-        padding: 0px 100px;
         height: 774px;
 
         img {
