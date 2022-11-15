@@ -27,7 +27,7 @@ const Navbar = () => {
 
       {mobileMenu ? (
         <div className={styles.menubar}>
-          <ul>
+          <ul onClick={showMenu}>
             <li>
               <Link to="/">Home</Link>
             </li>
