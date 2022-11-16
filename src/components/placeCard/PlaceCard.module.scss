@@ -6,13 +6,13 @@
     padding: 16px;
     @include flexCenter(column);
     justify-content: space-between;
-    width: 245px;
+    width: 255px;
     height: 318px;
     cursor: pointer;
 
     &__image {
         object-fit: contain;
-        width: 213px;
+        width: 223px;
     }
 
     &_detail {
@@ -66,6 +66,81 @@
             object-fit: contain;
             width: 92px;
             height: 12px;
+        }
+    }
+}
+
+
+/************ media queries **************************/
+
+@media(min-width: $md){
+    .place_card {
+        border: 1px solid #D7D7D7;
+        border-radius: 15px;
+        padding: 16px;
+        @include flexCenter(column);
+        justify-content: space-between;
+        width: 245px;
+        height: 318px;
+        cursor: pointer;
+    
+        &__image {
+            object-fit: contain;
+            width: 213px;
+        }
+    
+        &_detail {
+            width: 100%;
+            @include flexCenter(row);
+            justify-content: space-between;
+    
+            &__1 {
+                width: 67px;
+                height: 14px;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                text-align: left;
+            }
+    
+            &__2 {
+                width: 88px;
+                height: 14px;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 13px;
+                text-align: right;
+            }
+    
+            &__3 {
+                width: 83px;
+                height: 14px;
+                font-weight: 400;
+                font-size: 10.5px;
+                line-height: 13px;
+                text-align: left;
+            }
+    
+            &__4 {
+                width: 148px;
+                height: 14px;
+                font-weight: 400;
+                font-size: 10.5px;
+                line-height: 13px;
+                text-align: right;
+            }
+        }
+    
+        &__icon {
+            width: 100%;
+            @include flexCenter(row);
+            justify-content: flex-start;
+    
+            img {
+                object-fit: contain;
+                width: 92px;
+                height: 12px;
+            }
         }
     }
 }
