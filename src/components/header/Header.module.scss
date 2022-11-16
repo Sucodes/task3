@@ -39,6 +39,7 @@
             align-items: flex-start;
 
             .input {
+                padding: 0px 15px;
                 width: 230px;
                 height: 48px;
                 border: 1px solid #A3A3A3;
@@ -47,7 +48,7 @@
 
                 &::placeholder {
                     font-family: 'Red Rose';
-                    padding: 0px 15px;
+                    // padding: 0px 15px;
                     font-size: 14px;
                     line-height: 18px;
                     color: #B8B8B8;
