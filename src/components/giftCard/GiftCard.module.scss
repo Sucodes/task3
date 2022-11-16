@@ -3,7 +3,7 @@
 .giftcard {
     padding: 0px 20px;
     margin-top: 53px;
-    height: 650px;
+    height: 710px;
     background-color: $purpleColor;
     color: $white;
     @include flexCenter(column);
@@ -11,7 +11,9 @@
     flex-wrap: wrap;
 
     &_left {
+        z-index: 2;
         height: 280px;
+        max-width: 400px;
         @include flexCenter(column);
         justify-content: space-between;
         align-items: flex-start;
@@ -27,8 +29,8 @@
         p {
             width: inherit;
             font-weight: 400;
-            font-size: 1.2em;
-            line-height: 30px;
+            font-size: 1em;
+            line-height: 25px;
         }
 
         input {
@@ -44,7 +46,8 @@
     }
 
     img {
-        width: 19em;
+        z-index: 1;
+        width: 22em;
         object-fit: contain;
     }
 }
@@ -53,8 +56,8 @@
 
 @media (min-width: $md) {
     .giftcard {
+        padding: 0px 50px;
         @include flexCenter(row);
-        justify-content: space-between;
     
         &_left {
  
@@ -63,20 +66,24 @@
             }
     
             p {
+                margin-bottom: 0px;
                 width: 420px;
                 font-size: 18px;
-                line-height: 35px;
+                line-height: 30px;
             }
         }
 
         img {
-            width: 18em;
+            width: 25em;
         }
     }
 }
 
 @media (min-width: $lg) {
     .giftcard {
+        padding: 0px 50px;
+        @include flexCenter(row);
+        justify-content: space-between;
        
         &_left {
             p {
@@ -85,7 +92,7 @@
         }
 
         img {
-            width: 30em;
+            width: 25em;
             height: 574.85px;
         }
     }
@@ -96,7 +103,7 @@
         height: 774px;
 
         img {
-            width: 44em;
+            width: 40em;
         }
     }
 }

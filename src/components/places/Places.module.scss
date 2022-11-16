@@ -4,6 +4,7 @@
     @include flexCenter(column);
     justify-content: space-between;
     width: 100%;
+    padding: 0px 20px;
 
     &_filter {
         height: 7em;
@@ -14,7 +15,7 @@
         flex-wrap: wrap;
 
         ul {
-            height: 3em;
+            height: 3.5em;
             width: 100%;
             @include flexCenter(column);
             justify-content: space-around;
@@ -59,6 +60,7 @@
 
 @media (min-width: $md) {
     .places {
+        padding: 0px 50px;
 
         &_filter {
             margin-top: 75px;

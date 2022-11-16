@@ -1,21 +1,23 @@
 @import '../../styles/variables.scss';
 
 .footer {
+    height: 400px;
     background-color: $backgroundColorBlack;
-    height: 322px;
-    padding: 0px 20px;
+    padding: 10px 20px;
     @include flexCenter(column);
-    justify-content: space-around;
+    justify-content: space-between;
 
     &_links {
         color: #F7F7F7;
-        width: 100%;
         height: 120px;
+        width: 100%;
         @include flexCenter(column);
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: flex-start;
         flex-wrap: wrap;
 
         &__logo {
+            object-fit: contain;
             color: #F7F7F7;
             width: 150px;
             height: 25px;
@@ -27,6 +29,7 @@
             justify-content: space-between;
 
             img {
+                object-fit: contain;
                 cursor: pointer;
             }
         }
@@ -40,14 +43,14 @@
     }
 
     &_note {
+        height: 280px;
         width: 100%;
-        @include flexCenter(row);
-        justify-content: space-between;
-        grid-row: 1/2;
+        @include flexCenter(column);
+        justify-content: space-around;
+        align-items: flex-start;
 
         div {
-            width: 101px;
-            height: 169px;
+            width: 100%;
             @include flexCenter(column);
             justify-content: space-between;
             align-items: flex-start;
@@ -60,11 +63,12 @@
             }
 
             ul {
-                height: 124px;
+                width: 95%;
+                max-width: 400px;
                 text-decoration: none;
-                @include flexCenter(column);
+                @include flexCenter(row);
                 align-items: flex-start;
-                justify-content: space-between;
+                justify-content: space-around;
 
                 li {
                     height: 19px;
@@ -84,6 +88,7 @@
 
 @media(min-width: $md) {
     .footer {
+        height: 322px;
         padding: 0px 50px;
         @include flexCenter(row);
         justify-content: space-between;
@@ -94,9 +99,21 @@
             @include flexCenter(column);
             justify-content: space-around;
             align-items: flex-start;
-    
+
+            &__logo {
+                color: #F7F7F7;
+                width: 150px;
+                height: 25px;
+            }
+
             &_icon {
                 width: 130px;
+                @include flexCenter(row);
+                justify-content: space-between;
+    
+                img {
+                    cursor: pointer;
+                }
             }
     
             p {
@@ -109,13 +126,37 @@
     
         &_note {  
             width: 450px;
+            @include flexCenter(row);
+            justify-content: space-between;
 
             div {
+                width: 101px;
+                height: 169px;
+                @include flexCenter(column);
+                justify-content: space-between;
+                align-items: flex-start;
 
                 h5 {
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 22px;
+                }
+
+                ul {
+                    height: 124px;
+                    text-decoration: none;
+                    @include flexCenter(column);
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+
+                li {
+                    height: 19px;
+                    color:  #F1F3F9;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 35px;
+                    list-style-type: none;
                 }
             }
         }

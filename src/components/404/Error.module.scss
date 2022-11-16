@@ -1,1 +1,17 @@
 @import '../../styles/variables.scss';
+
+.error {
+    width: 100vw;
+    height: 100vh;
+    @include flexCenter(column);
+    color: $purpleColor;
+
+    a {
+        margin-top: 20px;
+        text-decoration: none;
+        color: $white;
+        width: 150px;
+        @include btn;
+        background-color: $purpleColor;
+    }
+}

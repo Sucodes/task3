@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
         <aside className={styles.header_left}>
-            <h2>Rent a <span>Place</span> away <span>Home</span> in the <span>Metaverse</span></h2>
+            <h2>Rent a <span>Place</span> away from <span>Home</span> in the <span>Metaverse</span></h2>
 
             <p>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</p>
 

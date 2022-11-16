@@ -6,13 +6,13 @@
     padding: 16px;
     @include flexCenter(column);
     justify-content: space-between;
-    width: 292px;
-    height: 372px;
+    width: 245px;
+    height: 318px;
     cursor: pointer;
 
     &_image {
-        width: 260px;
-        height: 265px;
+        object-fit: contain;
+        width: 213px;
     }
 
     &_detail {
@@ -24,32 +24,36 @@
             width: 67px;
             height: 14px;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 11px;
             line-height: 13px;
+            text-align: left;
         }
 
         &_2 {
             width: 88px;
             height: 14px;
             font-weight: 700;
-            font-size: 12px;
+            font-size: 11px;
             line-height: 13px;
+            text-align: right;
         }
 
         &_3 {
             width: 83px;
             height: 14px;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 10.5px;
             line-height: 13px;
+            text-align: left;
         }
 
         &_4 {
             width: 148px;
             height: 14px;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 10.5px;
             line-height: 13px;
+            text-align: right;
         }
     }
 
@@ -59,6 +63,7 @@
         justify-content: flex-start;
 
         img {
+            object-fit: contain;
             width: 92px;
             height: 12px;
         }
