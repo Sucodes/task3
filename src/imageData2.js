@@ -56,42 +56,42 @@ const nftImage = [
     img: NFT4,
   },
   {
-    id: 1,
+    id: 9,
     img: NFT9,
   },
 
   {
-    id: 2,
+    id: 10,
     img: NFT10,
   },
 
   {
-    id: 3,
+    id: 11,
     img: NFT11,
   },
 
   {
-    id: 4,
+    id: 12,
     img: NFT12,
   },
 
   {
-    id: 5,
+    id: 13,
     img: NFT13,
   },
 
   {
-    id: 6,
+    id: 14,
     img: NFT14,
   },
 
   {
-    id: 7,
+    id: 15,
     img: NFT15,
   },
 
   {
-    id: 8,
+    id: 16,
     img: NFT16,
   },
 ];

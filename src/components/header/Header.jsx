@@ -11,13 +11,13 @@ const Header = () => {
             <p>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</p>
 
             <form className={styles.header_left_form}>
-              <input className={styles.input} type="search" placeholder='Search for location' />
+              <input className={styles.input} type="text" placeholder='Search for location' />
               <input className={styles.submit} type='submit' value='Search'/>
             </form>
         </aside>
 
         <aside className={styles.header_right}>
-          <img src={header_img} alt="" />
+          <img src={header_img} alt="Metaverse" />
         </aside>
     </header>
   )

@@ -1,1 +1,271 @@
 @import '../../styles/variables.scss';
+
+.wallet {
+    background-color: rgba(64, 64, 64, 0.3);;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    @include flexCenter(row);
+    z-index: 2;
+
+    &_card {
+        // height: 326px;
+        width: 80%;
+        border: 1px solid #ffffff;
+        border-radius: 16px;
+        background-color: #FFFFFF;
+
+        &_heading {
+            width: 100%;
+            @include flexCenter(row);
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #CFD8DC;
+
+            p {
+                color: #333333;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 30px;
+            }
+
+            img {
+                width: 1em;
+            }
+        }
+
+        &_subheading {
+            padding: 10px;
+            @include flexCenter(column);
+            justify-content: space-between;
+            width: 100%;
+            
+            &__text {
+                width: inherit;
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+            
+            &__1 {
+                // height: 68px;
+                width: 100%;
+                border-radius: 12px;
+                padding: 10px 5px;
+                @include flexCenter(row);
+                justify-content: space-between;
+                margin-bottom: 8px;
+                background-color: #F8F9FA;
+                border: 1px solid #CFD8DC;
+                cursor: pointer;
+
+                p {
+                    font-family: $fontFamily2;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: #000000;
+                    @include flexCenter(row);
+                    justify-content: space-between;
+
+                    img {
+                        width: 1em;
+                        margin-right: 8px;
+                    }
+                }
+
+                &_img {
+                    width: 1em;
+                }
+            }
+
+            &__2 {
+                width: 100%;
+                border-radius: 12px;
+                padding: 10px 5px;
+                margin-bottom: 8px;
+                @include flexCenter(row);
+                justify-content: space-between;
+                border: 1px solid #CFD8DC;
+                cursor: pointer;
+
+                p {
+                    font-family: $fontFamily2;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: $black;
+                    @include flexCenter(row);
+                    justify-content: space-between;
+
+                    img {
+                        width: 1em;
+                        margin-right: 8px;
+                    }
+                }
+
+                &_img {
+                    width: 1em;
+                }
+            }
+        }
+    }
+}
+
+/***************** media queries *************************/
+
+@media (min-width: $md) {
+    .wallet {
+        &_card {
+            width: 60%;
+    
+            &_heading {
+                width: 100%;
+                padding: 20px;
+    
+                p {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+    
+                img {
+                    width: 1.5em;
+                }
+            }
+    
+            &_subheading {
+                padding: 20px;
+                width: 100%;
+                
+                &__text {
+                    width: inherit;
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+                
+                &__1 {
+                    padding: 20px;
+                    margin-bottom: 14px;
+    
+                    p {
+                        font-size: 18px;
+                        line-height: 23px;
+    
+                        img {
+                            width: 1.5em;
+                            margin-right: 12px;
+                        }
+                    }
+    
+                    &_img {
+                        width: 1.5em;
+                    }
+                }
+    
+                &__2 {
+                    padding: 20px;
+                    margin-bottom: 14px;
+    
+                    p {
+                        font-size: 18px;
+                        line-height: 23px;
+    
+                        img {
+                            width: 1.5em;
+                            margin-right: 12px;
+                        }
+                    }
+    
+                    &_img {
+                        width: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .wallet {
+        &_card {
+            height: 326px;
+            width: 600px;
+    
+            &_heading {
+                width: inherit;
+                padding: 24px 32px;
+    
+                p {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+    
+            &_subheading {
+                padding: 32px;
+                
+                &__text {
+                    width: inherit;
+                    margin-bottom: 16px;
+                }
+                
+                &__1 {
+                    height: 68px;
+                    width: 536px;
+                    border-radius: 12px;
+                    padding: 12px 20px;
+                    margin-bottom: 16px;
+    
+                    p {
+                        font-size: 18px;
+                        line-height: 23px;
+
+                        img {
+                            width: 44px;
+                            height: 44px;
+                            margin-right: 16px;
+                        }
+                    }
+
+                    // &_img {
+                    //     height: 8.550439834594734px;
+                    //     width: 15.000000000000014px;
+                    // }
+                }
+    
+                &__2 {
+                    height: 68px;
+                    width: 536px;
+                    border-radius: 12px;
+                    padding: 12px 20px;
+                    margin-bottom: 16px;
+    
+                    p {
+                        font-size: 18px;
+                        line-height: 23px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            margin-right: 16px;
+                        }
+                    }
+
+                    // &_img {
+                    //     height: 8.550439834594734px;
+                    //     width: 15.000000000000014px;
+                    // }
+                }
+            }
+        }
+    }
+}
